@@ -1,0 +1,21 @@
+<div class="result">
+
+    {% if result == "✅ Loan Approved" %}
+        <h1 class="approved">{{ result }}</h1>
+        <p>Your loan application has been successfully approved.</p>
+    {% else %}
+        <h1 class="rejected">{{ result }}</h1>
+        <p>Sorry! Your loan application could not be approved based on the provided details.</p>
+    {% endif %}
+
+    <br>
+
+    <a href="/predict">
+        <button class="btn">🔄 Predict Again</button>
+    </a>
+
+    <a href="/">
+        <button class="btn">🏠 Home</button>
+    </a>
+
+</div>

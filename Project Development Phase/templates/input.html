@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  .form-container {
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+  }
+
+  input, select {
+    width: 95%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+
+<form action="/submit" method="POST">
+
+<table>
+
+<tr>
+    <td><label>Gender</label></td>
+    <td>
+        <select name="Gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Married</label></td>
+    <td>
+        <select name="Married">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Dependents</label></td>
+    <td>
+        <input type="text" name="Dependents"
+               placeholder="No. of Dependents (0,1,2,3+)" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Education</label></td>
+    <td>
+        <select name="Education">
+            <option value="1">Graduate</option>
+            <option value="0">Not Graduate</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Self Employed</label></td>
+    <td>
+        <select name="Self_Employed">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Applicant Income</label></td>
+    <td>
+        <input type="number" name="ApplicantIncome"
+               placeholder="Your Income" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Co-Applicant Income</label></td>
+    <td>
+        <input type="number" name="CoapplicantIncome"
+               placeholder="Co-Applicant Income" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Loan Amount</label></td>
+    <td>
+        <input type="number" name="LoanAmount"
+               placeholder="Enter Loan Amount" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Loan Amount Term</label></td>
+    <td>
+        <input type="number" name="Loan_Amount_Term"
+               placeholder="Enter Loan Amount Term" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Credit History</label></td>
+    <td>
+        <input type="number" step="0.1"
+               name="Credit_History"
+               placeholder="1.0 or 0.0" required>
+    </td>
+</tr>
+
+<tr>
+    <td><label>Property Area</label></td>
+    <td>
+        <select name="Property_Area">
+            <option value="1">Urban</option>
+            <option value="0">Semiurban</option>
+            <option value="2">Rural</option>
+        </select>
+    </td>
+</tr>
+
+</table>
+
+<button type="submit" class="submit-btn">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

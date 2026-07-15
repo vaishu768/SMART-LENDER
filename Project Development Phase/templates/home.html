@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/input.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="heading">
+            <h1>Loan Approval Prediction System</h1>
+        </div>
+
+        <div class="content">
+            <p>
+                This application predicts whether a loan application is likely
+                to be approved based on applicant details such as income,
+                education, loan amount, credit history and property area.
+            </p>
+
+            <br>
+
+            <a href="/predict">
+                <button class="btn">Predict Loan Approval</button>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
